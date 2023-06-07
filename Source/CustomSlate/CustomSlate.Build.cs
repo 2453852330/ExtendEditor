@@ -7,11 +7,12 @@ public class CustomSlate : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		PublicDependencyModuleNames.AddRange(new string[]
 		{
-			"Core","CoreUObject","Engine","InputCore",
+			"Core"
 		});
 		
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
+			"CoreUObject","Engine","InputCore",
 			"ExtendEditorStyle","SlateCore","ToolMenus","Slate","Blutility","UMGEditor","UnrealEd","UMG"
 		});
 	}

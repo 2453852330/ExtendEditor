@@ -20,5 +20,11 @@ public class ExtendEditorEditorTarget : TargetRules
 			"CustomDataTypeEditor",
 			"CustomDataType"
 		} );
+		RegisterModulesCreatedByRider();
+	}
+
+	private void RegisterModulesCreatedByRider()
+	{
+		ExtraModuleNames.AddRange(new string[] {"ExtendSceneOutliner"});
 	}
 }

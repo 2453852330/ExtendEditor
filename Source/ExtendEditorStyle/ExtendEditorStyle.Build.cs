@@ -9,12 +9,12 @@ public class ExtendEditorStyle : ModuleRules
 		
 		PublicDependencyModuleNames.AddRange(new string[]
 		{
-			"Core","CoreUObject","Engine","InputCore"
+			"Core"
 		});
 		
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
-			"SlateCore"
+			"CoreUObject","Engine","InputCore","SlateCore"
 		});
 	}
 }

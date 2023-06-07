@@ -37,17 +37,16 @@
 		{
 			"Name": "CustomDataTypeEditor",
 			"Type": "Editor",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"UnrealEd",
-				"Slate",
-				"SlateCore",
-				"Engine"
-			]
+			"LoadingPhase": "Default"
 		},
 		{
 			"Name": "CustomDataType",
 			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "ExtendSceneOutliner",
+			"Type": "Editor",
 			"LoadingPhase": "Default"
 		}
 	]

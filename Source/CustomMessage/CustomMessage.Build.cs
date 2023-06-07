@@ -8,12 +8,12 @@ public class CustomMessage : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		PublicDependencyModuleNames.AddRange(new string[]
 		{
-			"Core","CoreUObject","Engine","InputCore"
+			"Core"
 		});
 		
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
-			"UnrealEd"
+			"UnrealEd","CoreUObject","Engine","InputCore"
 		});
 	}
 }

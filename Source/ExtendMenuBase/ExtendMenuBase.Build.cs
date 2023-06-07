@@ -9,11 +9,12 @@ public class ExtendMenuBase : ModuleRules
 		
 		PublicDependencyModuleNames.AddRange(new string[]
 		{
-			"Core","CoreUObject","Engine","InputCore"
+			"Core"
 		});
 		
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
+			"CoreUObject","Engine","InputCore",
 			"Slate","SlateCore","ToolMenus",
 			"ExtendEditorStyle","ExtendEditorCommand","CustomMessage","UnrealEd"
 		});

@@ -7,12 +7,13 @@ public class CustomDataTypeEditor : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		PublicDependencyModuleNames.AddRange(new string[]
 		{
-			"Core","CoreUObject","Engine","InputCore"
+			"Core"
 		});
 		
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
-			"CustomDataType","Slate","SlateCore","UnrealEd"
+			"CustomDataType","Slate","SlateCore","UnrealEd",
+			"CoreUObject","Engine","InputCore"
 		});
 	}
 }
