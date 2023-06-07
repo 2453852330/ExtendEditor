@@ -322,6 +322,7 @@ void FSceneOutlinerLockColumn::OnLockToggleStateChanged_LockSelection_SelectedAc
 	// SelectedActors->Num() == 0 当选择最顶层的Map时,Num=0;
 	UE_LOG(LogTemp,Warning,TEXT("[%s::%d]:Select %d Actors"),__FUNCTIONW__,__LINE__,SelectedActors->Num());
 
+	// 多选存在问题;
 	if(NewState == ECheckBoxState::Checked)
 	{
 		// 如果没有选中任何 Actor，仅发生了按钮的点击事件
@@ -332,18 +333,23 @@ void FSceneOutlinerLockColumn::OnLockToggleStateChanged_LockSelection_SelectedAc
 		}
 		else
 		{
+			// 第一次遍历添加Tag
+			// 防止状态在运行过程被清除
 			for(FSelectionIterator It(*SelectedActors); It; ++It)
 			{
 				AActor* SelectedActor = Cast<AActor>( *It );
 				if (SelectedActor)
 				{
-					UE_LOG(LogTemp,Warning,TEXT("[%s::%d]:%s"),__FUNCTIONW__,__LINE__,*SelectedActor->GetActorLabel());
 					ExtendSceneOutlinerModule.LockActorSelection(SelectedActor);
-					ExtendSceneOutlinerModule.SetActorSelectionState(SelectedActor,false);
 				}
-				else
+			}
+			// 重新设置选择状态
+			for(FSelectionIterator It(*SelectedActors); It; ++It)
+			{
+				AActor* SelectedActor = Cast<AActor>( *It );
+				if (SelectedActor)
 				{
-					UE_LOG(LogTemp,Warning,TEXT("[%s::%d]: %s Cast To Actor Failed"),__FUNCTIONW__,__LINE__,*SelectedActor->GetActorLabel());
+					ExtendSceneOutlinerModule.SetActorSelectionState(SelectedActor,false);
 				}
 			}
 		}
@@ -358,6 +364,7 @@ void FSceneOutlinerLockColumn::OnLockToggleStateChanged_LockSelection_SelectedAc
 		return;
 	}
 
+	// 没有问题
 	if(NewState == ECheckBoxState::Unchecked)
 	{
 		if(SelectedActors->Num() == 0)

@@ -87,7 +87,6 @@ void FExtendSceneOutlinerModule::OnActorSelected(UObject* SelectedObject)
 	
     if(AActor* SelectedActor = Cast<AActor>(SelectedObject))
     {
-        UE_LOG(LogTemp,Warning,TEXT("[%s::%d]:Actor Lable : %s "),__FUNCTIONW__,__LINE__,*SelectedActor->GetActorLabel());
         // 检测是否有 Lock Tag
         if(CheckIsActorSelectionLocked(SelectedActor))
         {
