@@ -9,6 +9,9 @@ public class EditorCustomization : ModuleRules
 		PublicDependencyModuleNames.AddRange(new string[]
 		{
 			"Core","CoreUObject","Engine","InputCore",
+		});
+		PrivateDependencyModuleNames.AddRange(new string[]
+		{
 			// 自定义细节面板需要添加以下模块
 			"Slate",
 			"SlateCore",

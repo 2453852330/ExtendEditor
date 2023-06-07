@@ -22,6 +22,7 @@ void FMyClassCustomization::CustomizeDetails(IDetailLayoutBuilder& DetailBuilder
 		// NewCat.AddProperty(SumPropertyHandle);
 		// DetailBuilder.HideProperty(APropertyHandle);
 	}
+	
 	{
 		// // 从DetailBuilder获取弱指针数组
 		// TArray<TWeakObjectPtr<UObject>> Objects;

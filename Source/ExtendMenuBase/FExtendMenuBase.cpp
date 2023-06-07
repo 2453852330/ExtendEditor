@@ -25,7 +25,6 @@ DEFINE_LOG_CATEGORY(MyLog)
 void FExtendMenuBase::StartupModule()
 {
 	// FMessageDialog::Open(EAppMsgType::Ok,LOCTEXT("Key01","ExtendMenuBase Module StartUp"),&Title);
-	
 	ExtendMenuByFExtend();
 	ExtendContentBrowserByFExtend();
 	ExtendViewportByFExtend();

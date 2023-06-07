@@ -9,6 +9,6 @@ public class ExtendEditorTarget : TargetRules
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "ExtendEditor" } );
+		ExtraModuleNames.AddRange( new string[] { "ExtendEditor","CustomDataType" } );
 	}
 }

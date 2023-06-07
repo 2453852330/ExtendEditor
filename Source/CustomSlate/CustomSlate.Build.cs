@@ -8,7 +8,11 @@ public class CustomSlate : ModuleRules
 		PublicDependencyModuleNames.AddRange(new string[]
 		{
 			"Core","CoreUObject","Engine","InputCore",
-			"ExtendEditorStyle","SlateCore","ToolMenus","Slate","Blutility","UMGEditor","UnrealEd"
+		});
+		
+		PrivateDependencyModuleNames.AddRange(new string[]
+		{
+			"ExtendEditorStyle","SlateCore","ToolMenus","Slate","Blutility","UMGEditor","UnrealEd","UMG"
 		});
 	}
 }

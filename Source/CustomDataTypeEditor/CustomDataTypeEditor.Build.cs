@@ -1,12 +1,10 @@
-﻿
-using UnrealBuildTool;
+﻿using UnrealBuildTool;
 
-public class ExtendEditorCommand : ModuleRules
+public class CustomDataTypeEditor : ModuleRules
 {
-	public ExtendEditorCommand(ReadOnlyTargetRules Target) : base(Target)
+	public CustomDataTypeEditor(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-		
 		PublicDependencyModuleNames.AddRange(new string[]
 		{
 			"Core","CoreUObject","Engine","InputCore"
@@ -14,7 +12,7 @@ public class ExtendEditorCommand : ModuleRules
 		
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
-			"Slate","ExtendEditorStyle"
+			"CustomDataType","Slate","SlateCore","UnrealEd"
 		});
 	}
 }

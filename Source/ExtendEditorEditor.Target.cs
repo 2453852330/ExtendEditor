@@ -16,7 +16,9 @@ public class ExtendEditorEditorTarget : TargetRules
 			"ExtendEditorStyle",
 			"ExtendEditorCommand",
 			"CustomMessage",
-			"CustomSlate"
+			"CustomSlate",
+			"CustomDataTypeEditor",
+			"CustomDataType"
 		} );
 	}
 }

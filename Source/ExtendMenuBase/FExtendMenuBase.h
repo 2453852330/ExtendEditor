@@ -5,6 +5,7 @@
 
 // 自定义 log category 
 DECLARE_LOG_CATEGORY_EXTERN(MyLog,Warning,All)
+// DECLARE_LOG_CATEGORY_CLASS(MyLog,Warning,All)
 
 class FExtendMenuBase : public IModuleInterface
 {

@@ -27,20 +27,27 @@
 		{
 			"Name": "CustomMessage",
 			"Type": "Editor",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"CoreUObject"
-			]
+			"LoadingPhase": "Default"
 		},
 		{
 			"Name": "CustomSlate",
 			"Type": "Editor",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "CustomDataTypeEditor",
+			"Type": "Editor",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-				"UMG",
+				"UnrealEd",
 				"Slate",
 				"SlateCore"
 			]
+		},
+		{
+			"Name": "CustomDataType",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
 		}
 	]
 }
