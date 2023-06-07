@@ -41,7 +41,8 @@
 			"AdditionalDependencies": [
 				"UnrealEd",
 				"Slate",
-				"SlateCore"
+				"SlateCore",
+				"Engine"
 			]
 		},
 		{

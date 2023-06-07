@@ -18,6 +18,11 @@ public:
 
 	// 打开AssetEditor
 	virtual void OpenAssetEditor(const TArray<UObject*>& InObjects, TSharedPtr<IToolkitHost> EditWithinLevelEditor) override;
+
+	// 右键重新导入功能实现
+	void BindReimporterAction();
+	void ExecuteReimport(TArray<TWeakObjectPtr<class UCustomNormalDistribution>> Objects);
+	
 private:
 	EAssetTypeCategories::Type AssetCategory;
 };
