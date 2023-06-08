@@ -25,6 +25,6 @@ public class ExtendEditorEditorTarget : TargetRules
 
 	private void RegisterModulesCreatedByRider()
 	{
-		ExtraModuleNames.AddRange(new string[] {"ExtendSceneOutliner"});
+		ExtraModuleNames.AddRange(new string[] {"ExtendSceneOutliner", "CustomHotKey"});
 	}
 }
