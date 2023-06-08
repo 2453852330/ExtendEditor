@@ -57,6 +57,14 @@
 				"Engine",
 				"CoreUObject"
 			]
+		},
+		{
+			"Name": "MaterialRelated",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Blutility"
+			]
 		}
 	]
 }
